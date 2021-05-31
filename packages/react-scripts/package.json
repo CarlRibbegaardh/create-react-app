@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts",
+  "name": "@carlribbegaardh/react-scripts",
   "version": "4.0.3",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
@@ -24,7 +24,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts": "./bin/react-scripts.js"
+    "carlribbegaardh-react-scripts": "./bin/react-scripts.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
