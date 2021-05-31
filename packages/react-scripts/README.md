@@ -48,7 +48,7 @@ Ideally you want a build tsconfig free from paths into src.
 The most often used solution is to update the config on the fly while building, but with this package
 you can configure separate tsconfigs for build and watch, making the build process much easier and faster.
 
-## special instrucitions
+## special instructions
 
 This package is only available while this PR is open.
 https://github.com/facebook/create-react-app/pull/11031

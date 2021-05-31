@@ -1,10 +1,10 @@
 {
   "name": "carlribbegaardh-react-scripts",
-  "version": "4.0.3",
+  "version": "4.0.3-beta.1",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/CarlRibbegaardh/create-react-app.git#until-pr",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
