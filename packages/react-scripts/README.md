@@ -1,12 +1,12 @@
 # react-scripts with custom tsconfigs
 
-React scripts with support for custom build and watch tsconfigs like this:
+React scripts with support for custom build and start (watch) tsconfigs like this:
 
 `"build": "env-cmd carlribbegaardh-react-scripts build"`
 
 ```
-TSCONFIG_BUILD=tsconfig.build.json
-TSCONFIG_WATCH=tsconfig.build.json
+TSCONFIG_PROD=tsconfig.prod.json
+TSCONFIG_DEV=tsconfig.dev.json
 ```
 
 # react-scripts
@@ -58,33 +58,34 @@ to be able to coexist along the normal react-scripts in a monorepo.
 
 ### Usage
 
-`yarn add -D carlribbegaardh-react-scripts`
+`yarn add -D carlribbegaardh-react-scripts`\
 `yarn workspace {your-workspace} add -D carlribbegaardh-react-scripts`
 
-Then change your package.json build (and/or watch) command from
-`"build": "react-scripts build"`
-to
-`"build": "carlribbegaardh-react-scripts build"`
+Then change your package.json build (and/or start) command from\
+`"build": "react-scripts build"`\
+ to\
+ `"build": "carlribbegaardh-react-scripts build"`
 
 ## custom tsconfig!
 
 1. Add `env-cmd` to your project
-2. Copy tsconfig.json to tsconfig.build.json and tsconfig.watch.json
-3. Adjust them to build vs watch your project the optimal way.
+2. Copy tsconfig.json to tsconfig.prod.json and tsconfig.dev.json
+3. Adjust them to build vs start your project the optimal way.
 4. Add a .env file like this:
 
 ```
-TSCONFIG_BUILD=tsconfig.build.json
-TSCONFIG_WATCH=tsconfig.build.json
+TSCONFIG_PROD=tsconfig.prod.json
+TSCONFIG_DEV=tsconfig.dev.json
 ```
 
-5. Change your tsconfig.json to
-`"build": "env-cmd carlribbegaardh-react-scripts build"`
+5. Change your tsconfig.json to\
+`"build": "env-cmd carlribbegaardh-react-scripts build"`\
 `"start": "env-cmd carlribbegaardh-react-scripts start"`
 
+6. Change your react-app-env.d.ts to\
+`/// <reference types="carlribbegaardh-react-scripts" />`
 
-
-Now the environment will behave like this:
-**tsconfig.json** is the file your editor will pick up.
-**tsconfig.build.json** is the file used during build your cra app.
-**tsconfig.watch.json** is the file used when you start your cra app.
+Now the environment will behave like this:\
+**tsconfig.json** is the file your editor will pick up.\
+**tsconfig.prod.json** is the file used during build your cra app.\
+**tsconfig.dev.json** is the file used when you start your cra app.
