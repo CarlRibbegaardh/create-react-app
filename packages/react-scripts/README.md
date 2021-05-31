@@ -58,8 +58,8 @@ to be able to coexist along the normal react-scripts in a monorepo.
 
 ### Usage
 
-`yarn add -D @carlribbegaardh/react-scripts`
-`yarn workspace {your-workspace} add -D @carlribbegaardh/react-scripts`
+`yarn add -D carlribbegaardh-react-scripts`
+`yarn workspace {your-workspace} add -D carlribbegaardh-react-scripts`
 
 Then change your package.json build (and/or watch) command from
 `"build": "react-scripts build"`
