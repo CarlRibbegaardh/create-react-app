@@ -4,7 +4,7 @@
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/CarlRibbegaardh/create-react-app/tree/release/cra-502-beta-tsconfig",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -12,7 +12,7 @@
     "node": ">=14.0.0"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/CarlRibbegaardh/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -24,7 +24,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts": "./bin/react-scripts.js"
+    "carlribbegaardh-react-scripts": "./bin/react-scripts.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
