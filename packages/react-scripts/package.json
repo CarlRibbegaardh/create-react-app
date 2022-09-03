@@ -1,6 +1,6 @@
 {
-  "name": "react-scripts",
-  "version": "5.0.1",
+  "name": "carlribbegaardh-react-scripts",
+  "version": "5.0.2-beta.1",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
